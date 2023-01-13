@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/dronlight.css">
+    <link rel="icon" href="img/favicon (2).ico">
+    <title>Drone Light</title>
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+
+        <input id="header__toggle" type="checkbox" />
+        <label class="header__menu-btn" for="header__toggle">
+            <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg" title="menu">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1 0C0.734784 0 0.48043 0.111742 0.292893 0.310645C0.105357 0.509547 0 0.779316 0 1.06061C0 1.3419 0.105357 1.61167 0.292893 1.81057C0.48043 2.00947 0.734784 2.12121 1 2.12121H17C17.2652 2.12121 17.5196 2.00947 17.7071 1.81057C17.8946 1.61167 18 1.3419 18 1.06061C18 0.779316 17.8946 0.509547 17.7071 0.310645C17.5196 0.111742 17.2652 0 17 0H1ZM0 7.42424C0 7.14295 0.105357 6.87318 0.292893 6.67428C0.48043 6.47538 0.734784 6.36364 1 6.36364H17C17.2652 6.36364 17.5196 6.47538 17.7071 6.67428C17.8946 6.87318 18 7.14295 18 7.42424C18 7.70553 17.8946 7.9753 17.7071 8.1742C17.5196 8.37311 17.2652 8.48485 17 8.48485H1C0.734784 8.48485 0.48043 8.37311 0.292893 8.1742C0.105357 7.9753 0 7.70553 0 7.42424ZM0 13.7879C0 13.5066 0.105357 13.2368 0.292893 13.0379C0.48043 12.839 0.734784 12.7273 1 12.7273H17C17.2652 12.7273 17.5196 12.839 17.7071 13.0379C17.8946 13.2368 18 13.5066 18 13.7879C18 14.0692 17.8946 14.3389 17.7071 14.5378C17.5196 14.7367 17.2652 14.8485 17 14.8485H1C0.734784 14.8485 0.48043 14.7367 0.292893 14.5378C0.105357 14.3389 0 14.0692 0 13.7879Z"
+                    fill="white" />
+            </svg>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="25px" height="25px" viewBox="0 0 305.002 305.002"
+                style="enable-background:new 0 0 305.002 305.002;;" xml:space="preserve" title="close menu">
+
+                <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+        S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+        c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z" />
+                <path
+                    d="M170.18,152.5l43.13-43.129c4.882-4.882,4.882-12.796,0-17.678c-4.881-4.882-12.796-4.881-17.678,0l-43.13,43.13
+        l-43.131-43.131c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678l43.13,43.13l-43.131,43.131
+        c-4.881,4.882-4.881,12.796,0,17.679c2.441,2.44,5.64,3.66,8.839,3.66c3.199,0,6.398-1.221,8.839-3.66l43.131-43.132
+        l43.131,43.132c2.441,2.439,5.64,3.66,8.839,3.66s6.398-1.221,8.839-3.66c4.882-4.883,4.882-12.797,0-17.679L170.18,152.5z" />
+
+            </svg>
+
+        </label>
+        <nav class="header__nav">
+            <a href="index.html" class="header__logo header-logo" title="LOGO" target="_self">
+                <div class="header-logo__first-el">
+                    <svg width="75" height="28" viewBox="0 0 75 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M56.25 0.223633V4.61694H63.4277V8.6207H11.5723V4.61694H18.75V0.223633H0V4.61694H7.17773V15.6192L24.3652 20.3054V25.5105H29.0527V28H33.4472V25.5105H41.5528V28H45.9473V25.5105H50.6348V20.3054L67.8223 15.6192V4.61694H75V0.223633H56.25Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <div class="header-logo__first-el header-logo__first-el--mobile">
+                    <svg width="56" height="22" viewBox="0 0 56 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M42 0.393646V3.67398H47.3594V6.66346H8.64062V3.67398H14V0.393646H0V3.67398H5.35938V11.889L18.1927 15.3881V19.2745H21.6927V21.1333H24.9739V19.2745H31.0261V21.1333H34.3073V19.2745H37.8073V15.3881L50.6406 11.889V3.67398H56V0.393646H42Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <div class="header-logo__second-el">
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.5751 0.638733C2.99204 0.638733 1.47534 1.24369 0.323975 2.29545L3.43984 5.41045C3.76357 5.16779 4.15586 5.03219 4.5751 5.03219C4.99434 5.03219 5.38662 5.16779 5.71035 5.41045L8.82607 2.29545C7.67471 1.24384 6.15815 0.638733 4.5751 0.638733Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <div class="header-logo__second-el header-logo__second-el--mobile">
+                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.05613 0.956879C2.87411 0.956879 1.74165 1.40858 0.881958 2.19389L3.20847 4.51976C3.45019 4.33858 3.7431 4.23732 4.05613 4.23732C4.36916 4.23732 4.66207 4.33858 4.90379 4.51976L7.23019 2.19389C6.3705 1.40869 5.23815 0.956879 4.05613 0.956879Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div class="header-logo__third-el">
+                    <svg width="19" height="7" viewBox="0 0 19 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.57505 0C6.21484 0 3.01138 1.28241 0.586914 3.55975L3.69854 6.6705C5.2999 5.21368 7.38701 4.3933 9.5752 4.3933C11.7632 4.3933 13.8503 5.21368 15.4516 6.6705L18.5632 3.55975C16.1387 1.28255 12.9353 0 9.57505 0Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <div class="header-logo__third-el header-logo__third-el--mobile">
+                    <svg width="14" height="5" viewBox="0 0 14 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.05599 0C4.54704 0 2.15511 0.95753 0.344849 2.65795L2.66819 4.98064C3.86388 3.89288 5.42226 3.28033 7.0561 3.28033C8.68983 3.28033 10.2482 3.89288 11.4438 4.98064L13.7671 2.65795C11.9569 0.957639 9.56494 0 7.05599 0Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+            </a>
+            <a href="index.html" class="header__link" target="_self" title="HOME">
+                HOME
+            </a>
+            <a href="#" class="header__link" target="_self" title="GALLERY">
+                GALLERY
+            </a>
+            <a href="#" class="header__link" target="_self" title="PRODUCTS">
+                PRODUCTS
+            </a>
+            <a href="#" class="header__link" target="_self" title="REVIEW">
+                REVIEW
+            </a>
+            <a href="#" class="header__link" target="_self" title="SUPPORT">
+                SUPPORT
+            </a>
+            <a href="#" class="header__link" target="_self" title="SEARCH">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.8474 23.3745L17.5851 16.1122C18.9626 14.4116 19.7917 12.2497 19.7917 9.89588C19.7917 4.43932 15.3524 0 9.89583 0C4.43927 0 0 4.43932 0 9.89588C0 15.3524 4.43932 19.7918 9.89588 19.7918C12.2497 19.7918 14.4116 18.9626 16.1122 17.5852L23.3745 24.8475C23.5779 25.0508 23.9076 25.0508 24.1111 24.8475L24.8475 24.1111C25.0508 23.9076 25.0508 23.5778 24.8474 23.3745ZM9.89588 17.7084C5.58781 17.7084 2.08336 14.2039 2.08336 9.89588C2.08336 5.58781 5.58781 2.08336 9.89588 2.08336C14.2039 2.08336 17.7084 5.58781 17.7084 9.89588C17.7084 14.2039 14.2039 17.7084 9.89588 17.7084Z"
+                        fill="white" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__main-container">
+            <div class="main__about-sections">
+                <div class="main__img-section">
+                    <div class="main__main-image">
+                        <img id="expandedImg" src="img/highlight2 1-min.jpg" alt="main image is about Drone Light"
+                            title="Drone Light">
+                    </div>
+                    <div class="main__subimages">
+                        <div class="main__first-subimage">
+                            <img src="img/highlight1 1-min.jpg" alt="first is about Drone Light" title="Drone Light"
+                                onclick="myFunction(this);">
+                        </div>
+                        <div class="main__second-subimage">
+                            <img src="img/highlight2 1-min.jpg" alt="second image is about Drone Light"
+                                title="Drone Light" onclick="myFunction(this);">
+                        </div>
+                        <div class="main__third-subimage">
+                            <img src="img/highlight3 1-min.jpg" alt="third image is about Drone Light"
+                                title="Drone Light" onclick="myFunction(this);">
+                        </div>
+                        <div class="main__fourth-subimage">
+                            <img src="img/highlight4 1-min.jpg" alt="fourth image is about Drone Light"
+                                title="Drone Light" onclick="myFunction(this);">
+                        </div>
+                    </div>
+                </div>
+                <div class="main__inform-section">
+                    <h1>Drone Light</h1>
+                    <div class="main__inform-subtitle">
+                        Super fast, easy control drone
+                    </div>
+                    <div class="main__subtitle-about-money">
+                        $ 4.500,00
+                    </div>
+                    <div class="main__inform-features">
+                        <div class="main__features-title">
+                            Drone features:
+                        </div>
+                        <div class="main__feature">
+                            <div class="">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.1875 0H7.8125L3.90625 4.88281H0V23.2422H25V4.88281H21.0938L17.1875 0ZM2.14844 8.20312C1.50123 8.20312 0.976562 7.67846 0.976562 7.03125C0.976562 6.38404 1.50123 5.85938 2.14844 5.85938C2.79564 5.85938 3.32031 6.38404 3.32031 7.03125C3.32031 7.67846 2.79564 8.20312 2.14844 8.20312ZM6.05469 14.0625C6.05469 17.6221 8.94035 20.5078 12.5 20.5078C16.0596 20.5078 18.9453 17.6221 18.9453 14.0625C18.9453 10.5029 16.0596 7.61719 12.5 7.61719C8.94035 7.61719 6.05469 10.5029 6.05469 14.0625ZM12.5 17.9688C10.3426 17.9688 8.59375 16.2199 8.59375 14.0625C8.59375 11.9051 10.3426 10.1562 12.5 10.1562C14.6574 10.1562 16.4062 11.9051 16.4062 14.0625C16.4062 16.2199 14.6574 17.9688 12.5 17.9688Z"
+                                        fill="#222222" />
+                                </svg>
+                            </div>
+                            <div class="main__feature-title">
+                                4K Camera Resolution
+                            </div>
+                        </div>
+                        <div class="main__feature">
+                            <div class="">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.0625 0.0206801L16.6016 0.0244141L25 5.12695V10.1562V25H0V10.1562V0L1.95312 0.00287225V5.66406H4.6875V0.00689338L6.64062 0.00976562V5.66406H9.375V0.0137868L11.3281 0.016659V5.66406H14.0625V0.0206801ZM2.14844 9.96094H19.7266V21.6797H2.14844V9.96094Z"
+                                        fill="#222222" />
+                                </svg>
+
+                            </div>
+                            <div class="main__feature-title">
+                                2 TB Storage
+                            </div>
+                        </div>
+                        <div class="main__feature">
+                            <div class="">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.20827 5.26394C7.70785 3.95895 9.61695 3.11245 11.7173 2.94274V0C8.79461 0.18023 6.14318 1.36283 4.1025 3.20823L6.20827 5.26394ZM13.2828 2.94274V0C16.0293 0.169371 18.5363 1.22396 20.5221 2.88196L18.4634 4.99074C17.0178 3.84119 15.2327 3.10029 13.2828 2.94274ZM19.6058 6.06161L21.6592 3.95819C23.5805 6.01742 24.8155 8.72522 25 11.7172H22.0572C21.8819 9.54786 20.9847 7.58244 19.6058 6.06161ZM21.9911 20.6716C23.7222 18.6629 24.8264 16.0987 25 13.2827H22.0572C21.894 15.3018 21.1056 17.1442 19.8853 18.6159L21.9911 20.6716ZM20.8974 21.7919L18.7917 19.7362C17.2921 21.041 15.383 21.8876 13.2828 22.0572V25C16.2054 24.8198 18.8568 23.6372 20.8974 21.7919ZM11.7173 25V22.0572C9.62908 21.8885 7.72992 21.0508 6.23429 19.7587L4.1809 21.8621C6.21087 23.6672 8.83188 24.8221 11.7173 25ZM3.07778 20.751L5.13642 18.6422C3.9039 17.1661 3.10684 15.3138 2.94276 13.2827H0C0.175947 16.1359 1.30718 18.7306 3.07778 20.751ZM0 11.7172H2.94276C3.10588 9.69818 3.89449 7.8558 5.1146 6.38406L3.00884 4.32838C1.27784 6.33708 0.173652 8.90128 0 11.7172ZM17.8892 8.75773L12.316 15.0499L12.3096 15.0412C12.262 15.085 12.2116 15.1267 12.1584 15.1659C11.3752 15.7427 10.2727 15.5755 9.69587 14.7923C9.11904 14.0091 9.28631 12.9066 10.0695 12.3298C10.1228 12.2905 10.1775 12.2548 10.2334 12.2224L10.2271 12.2137L17.8892 8.75773Z"
+                                        fill="#222222" />
+                                </svg>
+
+                            </div>
+                            <div class="main__feature-title">
+                                60 m/s Speed
+                            </div>
+                        </div>
+                        <div class="main__feature">
+                            <div class="">
+                                <svg width="23" height="16" viewBox="0 0 23 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.3335 0.166664H0.833496V15.3333H18.3335V12.3374H22.1668V2.97531H18.3335V0.166664ZM17.3335 1.47736H1.8335V14.0227H17.3335V1.47736ZM6.8335 2.41358H2.50016V13.0865H5.47933L6.8335 2.41358ZM7.38905 2.41358H11.8335L10.4446 13.0865H6.00016L7.38905 2.41358ZM16.6668 2.41358H12.3494L11.0002 13.0865H15.3176L16.6668 2.41358Z"
+                                        fill="#222222" />
+                                </svg>
+                            </div>
+                            <div class="main__feature-title">
+                                5000 mAh Battery
+                            </div>
+                        </div>
+                    </div>
+                    <button class="main__primary-btn main-primary-btn" type="button">
+                        <a href="#" class="main-primary-btn__link" title="ORDER IT NOW" target="_self">
+                            ORDER IT NOW
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="main__description-section">
+                <div class="main__description-container">
+                    <div class="main__description">
+                        Description
+                    </div>
+                    <div class="main__description-text">
+                        We provide a best self drone easy to use and operate. With auto pilot, the device will take a
+                        beautiful
+                        view for
+                        the best of flying operation. Drone light is every creators dream. Setting apperture manually
+                        and
+                        high
+                        battery
+                        performance. With 2 Terabyte storage, you can take a lot of picture in one take. 4K Camera
+                        resolution
+                        make
+                        your video clean and feels like a real environtment. Capture your moment in easy way effortlesly
+                        with
+                        auto
+                        pilot system. No need to learn how to fly and operate drone. Enjoy your simple and easy flying
+                        experience.
+                        Drone light is everything you need.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__company-desc">
+                <div class="footer__desc-title-and-logo">
+                    <div class="footer__desc-logo footer-desc-logo">
+                        <div class="footer-desc-logo__first-el" title="LOGO">
+                            <svg width="68" height="26" viewBox="0 0 68 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M51 0.604492V4.62123H57.5078V8.28182H10.4922V4.62123H17V0.604492H0V4.62123H6.50781V14.6805L22.0911 18.965V23.7239H26.3411V26H30.3255V23.7239H37.6745V26H41.6589V23.7239H45.9089V18.965L61.4922 14.6805V4.62123H68V0.604492H51Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="footer-desc-logo__second-el">
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.06822 0.0695801C2.63291 0.0695801 1.25777 0.622685 0.213867 1.58429L3.03892 4.43229C3.33244 4.21043 3.68811 4.08645 4.06822 4.08645C4.44833 4.08645 4.804 4.21043 5.09752 4.43229L7.92244 1.58429C6.87853 0.622819 5.50352 0.0695801 4.06822 0.0695801Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+
+                        <div class="footer-desc-logo__third-el">
+                            <svg width="18" height="7" viewBox="0 0 18 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.06794 0C6.02136 0 3.11688 1.17249 0.918701 3.25463L3.7399 6.09874C5.19181 4.76679 7.08412 4.01674 9.06808 4.01674C11.0519 4.01674 12.9442 4.76679 14.396 6.09874L17.2172 3.25463C15.019 1.17262 12.1145 0 9.06794 0Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="footer__desc-title">
+                        autodrone
+                    </div>
+                </div>
+                <div class="footer__company-desc-subtitle">
+                    Look up the sky and beautiful
+                    world easily.
+                </div>
+            </div>
+            <div class="footer__explore footer-explore">
+                <div class="footer-explore__title">
+                    Explore
+                </div>
+                <a href="" title="Our Services" target="_self"
+                    class="footer-explore__item footer-explore__item--margin-top-30px">
+                    Our Services
+                </a>
+                <a href="" title="Specification" target="_self"
+                    class="footer-explore__item footer-explore__item--margin-top-15px">
+                    Specification
+                </a>
+                <a href="" title="Refund" target="_self"
+                    class="footer-explore__item footer-explore__item--margin-top-15px">
+                    Refund
+                </a>
+                <a href="" title="Playlist" target="_self"
+                    class="footer-explore__item footer-explore__item--margin-top-15px">
+                    Playlist
+                </a>
+            </div>
+            <div class="footer__account footer-account">
+                <div class="footer-account__title">
+                    Account
+                </div>
+                <a href="" title="My Account" target="_self"
+                    class="footer-account__item footer-account__item--margin-top-30px">
+                    My Account
+                </a>
+                <a href="" title="Top Benefit" target="_self"
+                    class="footer-account__item footer-account__item--margin-top-15px">
+                    Top Benefit
+                </a>
+                <a href="" title="How-to Tutorials" target="_self"
+                    class="footer-account__item footer-account__item--margin-top-15px">
+                    How-to Tutorials
+                </a>
+                <a href="" title="Moment" target="_self"
+                    class="footer-account__item footer-explore__item--margin-top-15px">
+                    Moment
+                </a>
+            </div>
+            <div class="footer__office footer-office">
+                <div class="footer-office__title">
+                    Office
+                </div>
+                <a href="+02122081996" title="Telephone number" target="_self"
+                    class="footer-office__item footer-office__item--margin-top-30px">
+                    +021 2208 1996
+                </a>
+                <a href="https://scbd.com/menu/page/home" title="Location" target="_self"
+                    class="footer-office__item footer-office__item--margin-top-15px">
+                    SCBD, Jakarta
+                </a>
+                <a href="" title="No.2 (Autodrone)" target="_self"
+                    class="footer-office__item footer-office__item--margin-top-15px">
+                    No.2 (Autodrone)
+                </a>
+                <a href="" title="E-mail" target="_blank"
+                    class="footer-office__item footer-office__item--margin-top-15px">
+                    support@autodrone.id
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
